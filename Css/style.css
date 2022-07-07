@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-transiton: 0.5s;
+}
+body{
+    transition: var(--main-transiton);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    box-shadow:0px 0px 5px 5px #ddd;
+    background-color: white;
+    transition: var(--main-transiton);
+}
+.container .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 3px;
+}
+.container .logo img{
+    width: 45px;
+    border-radius: 8px;
+    margin-right:  10px;
+}
+.container .logo h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:  bold;
+    font-size: 45px;
+    color: #3333f7d1;
+}
+
+.container .title {
+    background-color: #3333f7d1;
+    padding: 10px;
+    margin: 25px 3px;
+    color: #ddd;
+    border-radius: 8px;
+    font-size: 30px;
+}
+.container .title span{
+    background-color: #333;
+    font-size: 10px;
+    padding: 2px;
+}
+.container .boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.container .boxes div{
+    margin: 5px;
+    background-color: brown;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+    border-radius: 4px;
+}
+
+.container .form {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(199, 214, 214);
+    padding: 40px;
+}
+.container .form .closeform {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: none;
+    background-color: brown;
+    color: #ddd;
+}
+.container .form h2{
+    font-size: 25px;
+    margin: 5px 0px;
+    text-transform: uppercase;
+}
+.container .form p{
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0px;
+}
+.container .form img{
+    width: 70px;
+    border-radius: 3px;
+}
